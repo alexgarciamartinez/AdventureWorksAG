@@ -1,0 +1,2 @@
+SELECT FORMAT(SUM(dbo.alex_facts.Ingresos), 'C', 'en-US') as TOTALINGRESOS FROM dbo.alex_facts 
+WHERE dbo.alex_facts.Region = 2 AND YEAR(dbo.alex_facts.Fecha) = 2017 AND DAY(dbo.alex_facts.Fecha) = 1;
